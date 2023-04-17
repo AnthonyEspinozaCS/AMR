@@ -685,9 +685,9 @@ button {
   flex-direction: column;
   align-content: center;
   gap: 1rem;
-  top: 50%;
+  top: 0;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%);
   overflow-y: scroll;
 
   text-align: center;
