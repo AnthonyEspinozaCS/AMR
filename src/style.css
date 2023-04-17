@@ -692,8 +692,10 @@ button {
   margin-inline: auto;
 }
 
-.contact-us h2 {
-  padding-bottom: 3rem;
+@media (max-width: 640px) {
+  .contact-us h2 {
+    padding-bottom: 3rem;
+  }
 }
 
 footer {
