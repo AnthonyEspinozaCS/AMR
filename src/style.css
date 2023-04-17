@@ -677,6 +677,7 @@ button {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+  overflow-y: scroll;
 
   text-align: center;
   background-color: #fff;
