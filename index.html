@@ -25,6 +25,9 @@
       </button>
 
       <nav>
+        <button class="mobile-nav-toggle-2 hidden" aria-controls="primary-navigation" aria-expanded="false">
+          <span class="sr-only">Menu</span>
+        </button>
         <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
           <li class="active">
             <a href="index.html" class="ff-sans-normal fs-nav text-black">Home</a>
@@ -43,14 +46,30 @@
       <picture class="hero__image clip">
         <source media="(max-width: 600px)" srcset="/src/hero-m.jpg" />
         <source media="(min-width: 601px)" srcset="/src/hero.jpg" />
-        <img src="/src/hero-m.jpg" alt="A family of 4 smiling." class="" />
+        <img src="/src/hero-m.jpg" alt="A family of 4 smiling." class="clipped-image" />
       </picture>
-      <div class="container hero__p">
-        <h1 class="hero__header ff-serif text-white">
-          All the decisions made by this company are based on one simple question...
-          <br />
-          what's best for the patients?
-        </h1>
+      <svg id="hero__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 600" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+        <defs>
+          <clipPath id="svgPath" clipPathUnits="objectBoundingBox">
+            <path d="M0,0 V0.933 C0.375,1,0.75,0.7,1,0.933 V0 H0"></path>
+          </clipPath>
+        </defs>
+        <!-- <image clip-path="url(#svgPath)" xlink:href="/src/hero.jpg" width="927" height="927" x="0" y="0" alt="Family of four smiling"> -->
+      </svg>
+      <div class="hero__p">
+        <svg id="top-wave" style="transform: rotate(0deg); transition: 0.3s" viewBox="0 2.13249 600 64.45" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <path style="transform: translate(0, 0px); opacity: 1" d="M 600 131 V 31 C 375 -69 150 131 0 31 V 131 H 600"></path>
+        </svg>
+        <div class="hero__blue">
+          <h1 class="hero__header ff-serif text-white">
+            All the decisions made by this company are based on one simple question...
+            <br />
+            what's best for the patients?
+          </h1>
+        </div>
+        <svg id="bottom-wave" style="transform: rotate(180deg); transition: 0.3s" viewBox="0 2.13249 600 64.45" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <path style="transform: translate(0, 0px); opacity: 1" d="M 600 131 V 31 C 375 -69 150 131 0 31 V 131 H 600"></path>
+        </svg>
       </div>
     </section>
 
