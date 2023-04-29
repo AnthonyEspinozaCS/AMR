@@ -422,7 +422,7 @@ button {
 .hero {
   position: relative;
   display: flex;
-  min-height: calc(100vh + 100px);
+  min-height: calc(50vh);
   flex-wrap: wrap;
   min-width: 100vw;
   align-content: flex-end;
@@ -441,37 +441,48 @@ button {
   background-color: rgba(76, 168, 226, 0.8);
 }
 
-.hero__p svg {
-  fill: rgba(76, 168, 226, 0.8);
-}
-
-#top-wave {
-  position: relative;
-  bottom: -4px;
-}
-
-/* .hero::after {
-  content: " ";
+.svg {
   position: absolute;
-  width: 100%;
-  height: calc(100vh + 100px);
-  top: 0;
-  left: 0;
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+}
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-  clip-path: polygon(0% 65%, 51% 99%, 100% 65%, 100% 0%, 0% 0%);
-  z-index: 1;
-} */
+.top__wave {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(76, 168, 226, 0.8);
+  clip-path: url(#svgPath--top);
+}
+
+.bot__wave {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(76, 168, 226, 0.8);
+  clip-path: url(#svgPath--bot);
+  transform: rotate(180deg);
+}
 
 .hero__image {
   position: absolute;
-  height: calc(100vh + 100px);
+  height: calc(50vh);
   min-width: 100vw;
   top: 0;
   left: 0;
 
   object-fit: cover;
   z-index: 0;
+}
+
+@media (min-width: 640px) {
+  .hero, .hero__image {
+    height: calc(100vh + 100px);
+  }
+
+  .top__wave, .bot__wave {
+    height: 100px;
+  }
 }
 
 #svgPath {

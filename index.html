@@ -15,7 +15,7 @@
   <body>
     <header class="primary-header flex" id="home">
       <div class="header-logo">
-        <a href="/index-2.html">
+        <a href="/index.html">
           <img src="/src/logo.png" class="logo" alt="Iluztró squid logo." />
         </a>
       </div>
@@ -25,9 +25,6 @@
       </button>
 
       <nav>
-        <button class="mobile-nav-toggle-2 hidden" aria-controls="primary-navigation" aria-expanded="false">
-          <span class="sr-only">Menu</span>
-        </button>
         <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
           <li class="active">
             <a href="index.html" class="ff-sans-normal fs-nav text-black">Home</a>
@@ -41,6 +38,18 @@
         </ul>
       </nav>
     </header>
+
+    <svg id="top-wave" class="svg" style="transform: rotate(0deg); transition: 0.3s" viewBox="0 2.13249 600 128.9" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <clipPath id="svgPath--top" clipPathUnits="objectBoundingBox">
+        <path style="transform: translate(0, 0px); opacity: 1" d="M1,1 V0.241 C0.625,-0.535,0.25,1,0,0.241 V1 H1"></path>
+      </clipPath>
+    </svg>
+
+    <svg id="bottom-wave" class="svg" style="transform: rotate(180deg); transition: 0.3s" viewBox="0 2.13249 600 128.9" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <clipPath id="svgPath--bot" clipPathUnits="objectBoundingBox">
+        <path style="transform: translate(0, 0px); opacity: 1" d="M1,1 V0.241 C0.625,-0.535,0.25,1,0,0.241 V1 H1"></path>
+      </clipPath>
+    </svg>
 
     <section class="hero">
       <picture class="hero__image clip">
@@ -57,9 +66,8 @@
         <!-- <image clip-path="url(#svgPath)" xlink:href="/src/hero.jpg" width="927" height="927" x="0" y="0" alt="Family of four smiling"> -->
       </svg>
       <div class="hero__p">
-        <svg id="top-wave" style="transform: rotate(0deg); transition: 0.3s" viewBox="0 2.13249 600 64.45" version="1.1" xmlns="http://www.w3.org/2000/svg">
-          <path style="transform: translate(0, 0px); opacity: 1" d="M 600 131 V 31 C 375 -69 150 131 0 31 V 131 H 600"></path>
-        </svg>
+        <div class="top__wave"></div>
+        <!-- <div class="hero__blue"> -->
         <div class="hero__blue">
           <h1 class="hero__header ff-serif text-white">
             All the decisions made by this company are based on one simple question...
@@ -67,9 +75,8 @@
             what's best for the patients?
           </h1>
         </div>
-        <svg id="bottom-wave" style="transform: rotate(180deg); transition: 0.3s" viewBox="0 2.13249 600 64.45" version="1.1" xmlns="http://www.w3.org/2000/svg">
-          <path style="transform: translate(0, 0px); opacity: 1" d="M 600 131 V 31 C 375 -69 150 131 0 31 V 131 H 600"></path>
-        </svg>
+        <div class="bot__wave"></div>
+        <!-- </div> -->
       </div>
     </section>
 
@@ -183,7 +190,7 @@
           Please schedule an appointment below:
         </h2>
         <!-- Calendly inline widget begin -->
-        <div class="calendly-inline-widget" data-url="https://calendly.com/amrsolserv/30min?hide_gdpr_banner=1&primary_color=4ca8e2" style="min-width: 320px; height: 630px"></div>
+        <div class="calendly-inline-widget" data-url="https://calendly.com/amrsolserv/30min?hide_gdpr_banner=1&primary_color=4ca8e2" style="height: 630px"></div>
         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
         <!-- Calendly inline widget end -->
       </section>
