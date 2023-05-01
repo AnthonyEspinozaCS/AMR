@@ -432,7 +432,6 @@ button {
   width: 100vw;
   height: fit-content;
   margin-top: auto;
-  margin-bottom: 25vh;
 
   z-index: 2000;
 }
@@ -451,6 +450,10 @@ button {
 }
 
 #top-wave {
+  display: block;
+}
+
+#bottom-wave {
   display: block;
 }
 
@@ -486,7 +489,7 @@ button {
     height: calc(100vh + 100px);
   }
 
-  .top__wave, .bot__wave {
+  #top__wave, .bot__wave {
     height: 100px;
   }
 }
