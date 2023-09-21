@@ -287,6 +287,10 @@ button {
   border: 0;
 }
 
+.white-filter {
+  filter: invert(100%) sepia(0%) saturate(1321%) hue-rotate(85deg) brightness(105%) contrast(109%);
+}
+
 /* colors */
 .bg-dark {
   background-color: var(--dark);
@@ -748,10 +752,6 @@ image {
   transform: translateX(-50%) translateY(-85%);
 }
 
-.value:nth-of-type(4) .icon img:nth-of-type(2) {
-  transform: translateX(-40%) translateY(-85%);
-}
-
 .tooth {
   width: 130px;
   height: 130px;
@@ -879,6 +879,47 @@ image {
 
 .contact-us h2 {
   padding-bottom: 3rem;
+}
+
+.contact-us__list {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  list-style: none;
+  padding: 0 0 3rem 0;
+  margin: 0;
+}
+
+.contact-us__list li {
+  flex: 0 1 300px;
+  padding: 1.5rem 0;
+  margin: auto;
+
+  font-size: var(--fs-600);
+
+  background-color: var(--blue);
+  border-radius: 5px;
+}
+
+.contact-us__icon {
+  width: 2rem;
+
+  filter: invert(100%) sepia(0%) saturate(1321%) hue-rotate(85deg) brightness(105%) contrast(109%);
+}
+
+.contact-us__list li:nth-of-type(1) .contact-us__icon {
+  align-self: center;
+}
+
+.contact-us__link {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  text-decoration: none;
 }
 
 footer {
